@@ -8,6 +8,10 @@ Code tested on Artix-7 XC7A35T FPGA board.
 - Fractal frame is generated one time untill next zoom
 - Max iteration for fractal generation is 500
 
+## Video Demonstration
+
+https://www.youtube.com/watch?v=fnmL0FrD2Qw
+
 
 
 
