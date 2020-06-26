@@ -408,20 +408,8 @@ always @ (posedge ui_clk) begin
                if(store_coun==10)start_drawing<=1;
 
 
-
-
-         if(ack_vga_reg==0 && need_pixel==2 && read_count==10 && cycle_counter==cycle_counter2)begin
-               
-              ack_vga_reg<=1;
-              read_count<=5;
-               cycle_counter<=0; 
-               cycle_counter2<=0;
-                if(need_pixel==1)index<=4;
-         
-          
-      end
       
-       if(ack_vga_reg==0 && need_pixel==1 && read_count==10 && cycle_counter==cycle_counter2)begin
+             if(ack_vga_reg==0 && need_pixel && read_count==10 && cycle_counter==cycle_counter2)begin
                
               ack_vga_reg<=1;
               read_count<=5;
