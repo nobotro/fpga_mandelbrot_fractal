@@ -26,8 +26,6 @@ module vga(
     input zoom,
     output reg zoom_ack2,
     output[1:0] need_pixel,
-    output[10:0] horcd,
-    output[10:0] vertcd,
     output [4:0] vga_r,
     output [5:0] vga_g,
     output [4:0] vga_b,
@@ -43,10 +41,6 @@ module vga(
    
  reg[10:0] vertc=0;
  reg[10:0] horc=0;
- 
- assign horcd=horc; 
- assign vertcd=vertc; 
- 
  reg start2_flag=0;
  reg[15:0] pixel=16'b0;
  reg[6:0] rd_pixel_index=79;
@@ -59,7 +53,7 @@ module vga(
  rd_pixel_index<=79;
   need_pixel_reg<=0;
  horc<=0;
- horc<=0;
+ vertc<=0;
  end
  else begin zoom_ack2<=0;
  
