@@ -140,8 +140,7 @@ wire ack=ack_reg;
    reg start_drawing=0;
   wire start=start_drawing;
  wire[1:0] need_pixel;
- wire[10:0] vertcd;
- wire[10:0] horcd;
+
 reg ack_vga_reg=0;
 wire ack_vga=ack_vga_reg;
   clk_wiz_0 clkgen(.clk_in1(clk),
@@ -183,8 +182,6 @@ wire[10:0] store_coun_wire=store_coun;
  .vga_r(vga_r),
  .vga_g(vga_g),
  .vga_b(vga_b),
- .vertcd(vertcd),
- .horcd(horcd),
  .vsync(vsync),
  .hsync(hsync),
  .store_coun(store_coun_wire)
