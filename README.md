@@ -12,4 +12,4 @@ Code tested on Artix-7 XC7A35T FPGA board.
 
 https://www.youtube.com/watch?v=fnmL0FrD2Qw
 
-If you want to buy me coffee or beer https://paypal.me/nobotro
+ 
